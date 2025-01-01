@@ -1,0 +1,47 @@
+.home-page {
+  .text-area {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 40%;
+    max-height: 90%;
+  }
+}
+
+h1 {
+  font-size: 53px;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 20px;
+  animation: fadeIn 1s 1.8s backwards;
+  a {
+    color: #fff9f9;
+    text-decoration: none;
+
+    &:hover {
+      color: #f9c6cf;
+    }
+  }
+}
+
+.flat-button {
+  color: #f9c6cf;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #f9c6cf;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
+
+  &:hover {
+    background: #f9c6cf;
+    color: rgb(28, 68, 64);
+  }
+}
