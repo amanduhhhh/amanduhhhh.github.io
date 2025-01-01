@@ -6,19 +6,22 @@
     transform: translateY(-60%);
     width: 40%;
     max-height: 90%;
+    z-index: 2;
   }
 }
 
 h1 {
-  font-size: 53px;
+  font-size: 64px;
   margin: 0;
+  letter-spacing: -1px;
 }
 
 h2 {
   margin-top: 20px;
-  animation: fadeIn 1s 1.8s backwards;
+  animation: bounceIn 1s 2s backwards;
   a {
     color: #fff9f9;
+    display: inline-block;
     text-decoration: none;
 
     &:hover {
@@ -37,7 +40,7 @@ h2 {
   border: 1px solid #f9c6cf;
   margin-top: 25px;
   float: left;
-  animation: fadeIn 1s 1.8s backwards;
+  animation: bounceInUp 1.5s 2.2s backwards;
   white-space: nowrap;
 
   &:hover {

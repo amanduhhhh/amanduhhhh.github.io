@@ -1,17 +1,35 @@
 import { Link } from "react-router-dom";
 import "./Home.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AnimatedLetters from "./AnimatedLetters";
+import Logo from "./Logo";
 
 function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
   const nameArray = "amanda".split("");
 
+  useEffect(() => {
+    return () => {
+      setTimeout(() => setLetterClass("text-animate-hover"), 3000);
+    };
+  }, []);
   return (
     <div className="container home-page">
       <div className="text-area">
         <h1>
-          hiya ! <br />
-          i'm <span style={{ color: "#F299A9" }}>amanda</span>
+          <span className={letterClass}>h</span>
+          <span className={`${letterClass} _12`}>i</span>
+          <span className={`${letterClass} _13`}>y</span>
+          <span className={`${letterClass} _14`}>a</span>{" "}
+          <span className={`${letterClass} _15`}>!</span>
+          <br />
+          <span className={`${letterClass} _16`}>i</span>
+          <span className={`${letterClass} _16`}>'m</span>{" "}
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={nameArray}
+            idx={17}
+          />
           <br />
         </h1>
         <h2>
@@ -24,6 +42,7 @@ function Home() {
           contact me
         </Link>
       </div>
+      <Logo></Logo>
     </div>
   );
 }

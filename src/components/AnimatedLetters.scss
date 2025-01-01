@@ -1,0 +1,29 @@
+@import "animate.css";
+.highlighted {
+  color: #f299a9;
+}
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+@for $i from 1 through 22 {
+  .text-animate._#{$i} {
+    animation-delay: #{calc($i/10)}s;
+  }
+}
+
+.text-animate-hover {
+  display: inline-block;
+  min-width: 10px;
+  animation-fill-mode: both;
+  &:hover {
+    animation: tada 1s;
+    color: #ffb2c0;
+  }
+}
+// .text-animate-hover.highlighted:hover {
+//   color: #ffb2c0;
+// }
