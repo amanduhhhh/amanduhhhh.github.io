@@ -35,8 +35,8 @@ const About = () => {
             I'm a <span className="highlighted-2">CS + Co-op student</span> at
             the University of Waterloo, with extensive experience in languages
             such as Java, Python, HTML, CSS, and Javascript, as well as
-            frameworks like React. Make sure to take a look at my{" "}
-            <Link to="/projects">projects!</Link>
+            frameworks like React. I have also worked with Docker and MySQL.
+            Make sure to take a look at my <Link to="/projects">projects!</Link>
           </p>
           <p>
             Besides coding, I'm also a digital artist proficient in{" "}
