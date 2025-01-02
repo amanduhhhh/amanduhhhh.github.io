@@ -1,0 +1,17 @@
+.home-page {
+  .text-area {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 40%;
+    max-height: 90%;
+    z-index: 2;
+  }
+
+  .alert {
+    margin-right: 5%;
+    text-align: right;
+    color: #c9ddd3;
+  }
+}
