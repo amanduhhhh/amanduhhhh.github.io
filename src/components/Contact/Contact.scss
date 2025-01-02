@@ -56,3 +56,12 @@
     }
   }
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  outline: none;
+  &:focus {
+    border-bottom: 2px solid rgb(249, 198, 207);
+  }
+}

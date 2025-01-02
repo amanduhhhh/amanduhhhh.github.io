@@ -6,6 +6,7 @@ import { FormEvent, useRef, useEffect, useState } from "react";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const refForm = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const Contact = () => {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     if (refForm.current) {
       const formData = new FormData(refForm.current);
@@ -106,6 +108,7 @@ const Contact = () => {
                     name="subject"
                     placeholder="subject"
                     required
+                    disabled={isSubmitting}
                   />
                 </li>
               </ul>
