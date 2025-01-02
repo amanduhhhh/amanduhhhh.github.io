@@ -36,14 +36,14 @@ const About = () => {
             the University of Waterloo, with extensive experience in languages
             such as Java, Python, HTML, CSS, and Javascript, as well as
             frameworks like React. Make sure to take a look at my{" "}
-            <Link to="/projects">projects!</Link>
+            <Link to="/amandaxi/projects">projects!</Link>
           </p>
           <p>
             Besides coding, I'm also a digital artist proficient in{" "}
             <span className="highlighted-2">
               art, animation, and graphic design.
             </span>{" "}
-            <Link to="/design">Take a peek!</Link>
+            <Link to="/amandaxi/design">Take a peek!</Link>
           </p>
 
           <h2>awards and achievements:</h2>
