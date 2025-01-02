@@ -3,11 +3,13 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { FormEvent, useRef, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const refForm = useRef<HTMLFormElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     return () => {
@@ -39,11 +41,11 @@ const Contact = () => {
         .then(
           () => {
             alert("sent!");
-            window.location.reload();
+            navigate("/amandaxi");
           },
           (error) => {
             alert("failed, here's what's wrong: \n" + error);
-            window.location.reload();
+            navigate("/amandaxi");
           }
         );
     } else {
