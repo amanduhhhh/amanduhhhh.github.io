@@ -13,9 +13,8 @@ const Contact = () => {
   // const navigate = useNavigate();
 
   useEffect(() => {
-    return () => {
-      setTimeout(() => setLetterClass("text-animate-hover"), 2600);
-    };
+    const timer = setTimeout(() => setLetterClass("text-animate-hover"), 2600);
+    return () => clearTimeout(timer);
   }, []);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {

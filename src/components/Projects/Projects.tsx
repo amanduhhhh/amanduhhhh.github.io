@@ -5,9 +5,8 @@ import { useEffect, useState } from "react";
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   useEffect(() => {
-    return () => {
-      setTimeout(() => setLetterClass("text-animate-hover"), 2400);
-    };
+    const timer = setTimeout(() => setLetterClass("text-animate-hover"), 2400);
+    return () => clearTimeout(timer);
   }, []);
   return (
     <>
