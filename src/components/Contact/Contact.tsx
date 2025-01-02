@@ -9,7 +9,7 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const refForm = useRef<HTMLFormElement>(null);
-  const formResult = document.querySelectorAll("input, textarea");
+  // const formResult = document.querySelectorAll("input, textarea");
   // const navigate = useNavigate();
 
   useEffect(() => {
@@ -43,19 +43,21 @@ const Contact = () => {
           () => {
             alert("sent!");
             setIsSubmitting(false);
-            formResult.forEach((input) => {
-              if (
-                input instanceof HTMLInputElement ||
-                input instanceof HTMLTextAreaElement
-              ) {
-                input.value = "";
-              }
-            });
+            window.location.reload();
+            // formResult.forEach((input) => {
+            //   if (
+            //     input instanceof HTMLInputElement ||
+            //     input instanceof HTMLTextAreaElement
+            //   ) {
+            //     input.value = "";
+            //   }
+            // });
             // navigate("/amandaxi");
           },
           (error) => {
             alert("failed, here's what's wrong: \n" + error);
             setIsSubmitting(false);
+            window.location.reload();
             // navigate("/amandaxi");
           }
         );
