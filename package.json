@@ -1,4 +1,5 @@
 {
+  "homepage": "amanduhhhh.github.io",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -15,6 +18,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "animate.css": "^4.1.1",
+    "gh-pages": "^6.3.0",
     "gsap-trial": "^3.12.5",
     "loaders.css": "^0.1.2",
     "react": "^19.0.0",
