@@ -20,31 +20,31 @@ function Sidebar() {
       <nav>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/#/"
+          to="/"
         >
           <FontAwesomeIcon icon={faHome} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/#/about"
+          to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/#/projects"
+          to="/projects"
         >
           <FontAwesomeIcon icon={faFolder} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/#/design"
+          to="/design"
         >
           <FontAwesomeIcon icon={faBrush} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/#/contact"
+          to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#60837F" />
         </NavLink>
