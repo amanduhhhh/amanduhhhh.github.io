@@ -1,16 +1,53 @@
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./contact.scss";
-import { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { FormEvent, useRef, useEffect, useState } from "react";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  const refForm = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     return () => {
       setTimeout(() => setLetterClass("text-animate-hover"), 2600);
     };
   }, []);
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (refForm.current) {
+      const formData = new FormData(refForm.current);
+      const templateParams = {
+        from_name: formData.get("name"),
+        from_email: formData.get("email"),
+        subject: formData.get("subject"),
+        message: formData.get("message"),
+        reply_to: formData.get("email"),
+      };
+
+      emailjs
+        .send(
+          "service_m2sc9gs",
+          "template_zav2vyr",
+          templateParams,
+          "lUMBD9n0gVREwLrwU"
+        )
+        .then(
+          () => {
+            alert("sent!");
+            window.location.reload();
+          },
+          (error) => {
+            alert("failed, here's what's wrong: \n" + error);
+            window.location.reload();
+          }
+        );
+    } else {
+      console.error("issues with form");
+    }
+  };
   return (
     <>
       <div className="container contact-page">
@@ -33,7 +70,7 @@ const Contact = () => {
             <span className="highlighted-2">{` :)`}</span>
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="name" required />
