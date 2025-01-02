@@ -41,10 +41,12 @@ const Contact = () => {
         .then(
           () => {
             alert("sent!");
+            setIsSubmitting(false);
             // navigate("/amandaxi");
           },
           (error) => {
             alert("failed, here's what's wrong: \n" + error);
+            setIsSubmitting(false);
             // navigate("/amandaxi");
           }
         );

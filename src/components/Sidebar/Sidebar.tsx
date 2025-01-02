@@ -18,33 +18,30 @@ function Sidebar() {
         <img src={logo} alt="logo" />
       </Link>
       <nav>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to="/amandaxi"
-        >
+        <NavLink className={({ isActive }) => (isActive ? "active" : "")} to="">
           <FontAwesomeIcon icon={faHome} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/amandaxi/about"
+          to="about"
         >
           <FontAwesomeIcon icon={faUser} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/amandaxi/projects"
+          to="projects"
         >
           <FontAwesomeIcon icon={faFolder} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/amandaxi/design"
+          to="design"
         >
           <FontAwesomeIcon icon={faBrush} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/amandaxi/contact"
+          to="contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#60837F" />
         </NavLink>

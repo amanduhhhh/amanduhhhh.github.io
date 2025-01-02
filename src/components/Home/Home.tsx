@@ -39,7 +39,7 @@ function Home() {
               university of waterloo
             </a>
           </h2>
-          <Link to="/amandaxi/contact" className="flat-button">
+          <Link to="/contact" className="flat-button">
             contact me
           </Link>
         </div>
