@@ -1,6 +1,6 @@
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import "./contact.scss";
+import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { FormEvent, useRef, useEffect, useState } from "react";
 
