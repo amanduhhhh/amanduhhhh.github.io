@@ -9,6 +9,7 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const refForm = useRef<HTMLFormElement>(null);
+  const formResult = document.querySelectorAll("input, textarea");
   // const navigate = useNavigate();
 
   useEffect(() => {
@@ -42,6 +43,14 @@ const Contact = () => {
           () => {
             alert("sent!");
             setIsSubmitting(false);
+            formResult.forEach((input) => {
+              if (
+                input instanceof HTMLInputElement ||
+                input instanceof HTMLTextAreaElement
+              ) {
+                input.value = "";
+              }
+            });
             // navigate("/amandaxi");
           },
           (error) => {
@@ -76,7 +85,7 @@ const Contact = () => {
             <span className="highlighted-2">{` :)`}</span>
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form ref={refForm} id="contactForm" onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="name" required />
