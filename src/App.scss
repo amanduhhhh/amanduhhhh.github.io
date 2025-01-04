@@ -111,45 +111,52 @@ h2 {
 // page stuff
 .about-page,
 .contact-page,
-.project-page,
-.design-page {
-  h2 {
-    font-size: 24px;
-  }
-  p {
-    &:nth-of-type(1) {
-      animation-delay: 1.5s;
-    }
-    &:nth-of-type(2) {
-      animation-delay: 1.7s;
-    }
-  }
-  li {
-    &:nth-of-type(1) {
-      animation-delay: 1.9s;
-    }
-    &:nth-of-type(2) {
-      animation-delay: 2s;
-    }
-    &:nth-of-type(3) {
-      animation-delay: 2.1s;
-    }
-    &:nth-of-type(4) {
-      animation-delay: 2.2s;
-    }
-    &:nth-of-type(5) {
-      animation-delay: 2.4s;
-    }
-  }
+.project-page {
   .text-area {
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translateY(-55%);
-    width: 35%;
+    transform: translateY(-52%);
+    max-width: 600px;
+    width: 80%;
     max-height: 90%;
     z-index: 2;
     vertical-align: middle;
     display: table-cell;
+
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      &:nth-of-type(1) {
+        animation-delay: 1.5s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 1.7s;
+      }
+    }
+    li {
+      &:nth-of-type(1) {
+        animation-delay: 1.9s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 2s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 2.1s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: 2.2s;
+      }
+      &:nth-of-type(5) {
+        animation-delay: 2.4s;
+      }
+    }
+  }
+}
+
+@media (width<=40em) {
+  h1 {
+    font-size: 48px;
   }
 }

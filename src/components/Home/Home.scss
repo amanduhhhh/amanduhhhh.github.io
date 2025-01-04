@@ -3,14 +3,15 @@
     position: absolute;
     left: 10%;
     top: 50%;
+    width: 90%;
+    max-width: 500px;
     transform: translateY(-60%);
-    width: 40%;
     max-height: 90%;
     z-index: 2;
   }
 
   .alert {
-    margin-right: 5%;
+    margin-right: 10%;
     text-align: right;
     color: #c9ddd3;
     z-index: 4;

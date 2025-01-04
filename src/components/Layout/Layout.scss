@@ -4,9 +4,9 @@
   position: absolute;
 }
 .container {
-  width: 100%;
   will-change: contents;
   height: 90%;
+  width: calc(100% - 60px);
   min-height: 566px;
   position: absolute;
   opacity: 0;
@@ -16,4 +16,5 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  left: 60px;
 }
