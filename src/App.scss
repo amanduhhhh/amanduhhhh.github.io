@@ -95,6 +95,7 @@ h1 {
   letter-spacing: -1px;
 }
 h2 {
+  font-size: 24px;
   margin-top: 20px;
   animation: bounceIn 1s 2s backwards;
   a {
@@ -124,9 +125,6 @@ h2 {
     vertical-align: middle;
     display: table-cell;
 
-    h2 {
-      font-size: 24px;
-    }
     p {
       &:nth-of-type(1) {
         animation-delay: 1.5s;
@@ -155,8 +153,15 @@ h2 {
   }
 }
 
-@media (width<=40em) {
+@media (width<=50em) {
   h1 {
-    font-size: 48px;
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p,
+  li {
+    font-size: 12px;
   }
 }

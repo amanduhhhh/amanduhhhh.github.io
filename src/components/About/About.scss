@@ -6,11 +6,9 @@
 .stage-cube {
   width: 50%;
   height: 100%;
-  top: 50%;
+  top: 80%;
   transform: translateY(-50%);
-  vertical-align: middle;
   max-height: 90%;
-  padding-top: 30%;
   margin-left: 0;
   position: absolute;
   right: 0;
@@ -56,6 +54,9 @@
     }
     .face6 {
       transform: rotateX(-90deg) translateZ(100px);
+    }
+    @media (width<=50em) {
+      display: none;
     }
   }
 }
