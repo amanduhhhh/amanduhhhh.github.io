@@ -4,6 +4,7 @@
   position: absolute;
 }
 .container {
+  overflow: hidden;
   will-change: contents;
   height: 90%;
   width: calc(100% - 60px);

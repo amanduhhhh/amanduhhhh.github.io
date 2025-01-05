@@ -16,12 +16,16 @@ const Design = () => {
     const timer = setTimeout(() => {
       setImageClass("image-hover");
       setLetterClass("text-animate-hover");
+      const designPage = document.querySelector(".design-page") as HTMLElement;
+      if (designPage) {
+        designPage.style.overflowY = "auto";
+      }
     }, 3600);
     return () => clearTimeout(timer);
   }, []);
   return (
     <>
-      <div className="container design-page">
+      <div className="design-page">
         <div className="text-area">
           <h1>
             <AnimatedLetters

@@ -1,9 +1,18 @@
 .design-page {
+  width: calc(100% - 60px);
+  height: 100%;
+  min-height: 566px;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+  left: 60px;
   .text-area {
-    p {
-      animation-delay: 1.5s;
-      margin: 5px;
-    }
+    margin-top: 2vh;
     left: 5%;
     position: absolute;
     top: 10%;
@@ -13,6 +22,10 @@
     max-height: 20%;
     z-index: 2;
     display: block;
+    p {
+      animation-delay: 1.5s;
+      margin: 5px;
+    }
   }
   .gallery {
     display: flex;
@@ -20,11 +33,9 @@
     grid-gap: 3rem;
     margin-inline: auto;
     z-index: 1;
-    top: 60%;
-    transform: translateY(-50%);
+    top: 22vh;
     left: 5%;
     position: absolute;
-    height: 80%;
     width: 90%;
     .img-container:hover .image-hover {
       animation: shrink-grow 0.5s;
@@ -35,6 +46,9 @@
     }
     img {
       height: 30vh;
+      &:last-child {
+        margin-bottom: 3rem;
+      }
     }
 
     @for $i from 0 through 4 {
@@ -47,15 +61,15 @@
 
 @keyframes shrink-grow {
   0% {
-    transform: scale(1); /* Start at normal size */
+    transform: scale(1);
   }
   25% {
-    transform: scale(0.95); /* Shrink quickly with slight rotation */
+    transform: scale(0.95);
   }
   70% {
-    transform: scale(1.05); /* Shrink quickly with slight rotation */
+    transform: scale(1.05);
   }
   100% {
-    transform: scale(1); /* Return to normal size */
+    transform: scale(1);
   }
 }

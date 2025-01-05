@@ -4,6 +4,9 @@
   }
 }
 .stage-cube {
+  @media (width<=50em) {
+    display: none;
+  }
   width: 50%;
   height: 100%;
   top: 80%;
@@ -54,9 +57,6 @@
     }
     .face6 {
       transform: rotateX(-90deg) translateZ(100px);
-    }
-    @media (width<=50em) {
-      display: none;
     }
   }
 }

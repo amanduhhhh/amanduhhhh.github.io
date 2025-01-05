@@ -44,9 +44,9 @@ function Home() {
         </div>
         <Logo />
         <div className="alert">
-          <h3>
+          {/* <h3>
             * view on desktop for best experience... <br /> pretty please
-          </h3>
+          </h3> */}
         </div>
       </div>
       <Loader type="pacman" active={true} />
