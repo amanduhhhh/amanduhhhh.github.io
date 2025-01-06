@@ -37,6 +37,7 @@
     left: 5%;
     position: absolute;
     width: 90%;
+    padding-bottom: 3rem;
     .img-container:hover .image-hover {
       animation: shrink-grow 0.5s;
     }
@@ -46,9 +47,6 @@
     }
     img {
       height: 30vh;
-      &:last-child {
-        margin-bottom: 3rem;
-      }
     }
 
     @for $i from 0 through 4 {

@@ -65,6 +65,10 @@ const About = () => {
             <li>
               <span className="highlighted-2">Top 25%</span> in CCC Sr 2024
             </li>
+            <li>
+              <span className="highlighted-2">Ted Rogers Future Leaders</span>{" "}
+              scholarship recipient
+            </li>
           </ul>
         </div>
         <div className="stage-cube">
