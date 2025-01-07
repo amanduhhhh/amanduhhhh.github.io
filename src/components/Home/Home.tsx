@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Logo from "./Logo/Logo";
 import Loader from "react-loaders";
+import resumeLink from "../../assets/resume.pdf";
 
 function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -38,9 +39,9 @@ function Home() {
               university of waterloo
             </a>
           </h2>
-          <Link to="/contact" className="flat-button">
-            contact me
-          </Link>
+          <a target="_blank" href={resumeLink} className="flat-button">
+            resume
+          </a>
         </div>
         <Logo />
         <div className="alert">
