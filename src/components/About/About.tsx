@@ -39,7 +39,10 @@ const About = () => {
             <p>
               I have also worked with WSL, Docker and MySQL. For more
               information, see my{" "}
-              <a target="blank" href="/public/resume.pdf">
+              <a
+                target="blank"
+                href="https://drive.google.com/file/d/19EHVbFxRjOp1ohoivOMM3_Mv4--Ka_S-/view?usp=sharing"
+              >
                 resume.
               </a>
             </p>
