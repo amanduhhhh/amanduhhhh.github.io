@@ -7,6 +7,7 @@ import {
   faFolder,
   faHome,
   faUser,
+  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -50,6 +51,11 @@ function Sidebar() {
         </NavLink>
       </nav>
       <ul>
+        <li>
+          <a target="blank" href="/public/resume.pdf">
+            <FontAwesomeIcon icon={faFile} color="#60837F" />
+          </a>
+        </li>
         <li>
           <a target="blank" href="https://www.linkedin.com/in/amandamxi/">
             <FontAwesomeIcon icon={faLinkedin} color="#60837F" />
