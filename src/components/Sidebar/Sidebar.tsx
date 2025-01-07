@@ -52,7 +52,10 @@ function Sidebar() {
       </nav>
       <ul>
         <li>
-          <a target="blank" href="../../../public/resume.pdf">
+          <a
+            target="blank"
+            href="https://drive.google.com/file/d/19EHVbFxRjOp1ohoivOMM3_Mv4--Ka_S-/view?usp=sharing"
+          >
             <FontAwesomeIcon icon={faFile} color="#60837F" />
           </a>
         </li>
