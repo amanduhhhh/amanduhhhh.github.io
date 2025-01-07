@@ -52,7 +52,7 @@ function Sidebar() {
       </nav>
       <ul>
         <li>
-          <a target="blank" href="../../../public/Resume.pdf">
+          <a target="blank" href="../../../public/resume.pdf">
             <FontAwesomeIcon icon={faFile} color="#60837F" />
           </a>
         </li>
