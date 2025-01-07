@@ -7,7 +7,7 @@ import {
   faFolder,
   faHome,
   faUser,
-  faFile,
+  // faFile,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -52,12 +52,12 @@ function Sidebar() {
       </nav>
       <ul>
         <li>
-          <a
+          {/* <a
             target="blank"
             href="https://drive.google.com/file/d/19EHVbFxRjOp1ohoivOMM3_Mv4--Ka_S-/view?usp=sharing"
           >
             <FontAwesomeIcon icon={faFile} color="#60837F" />
-          </a>
+          </a> */}
         </li>
         <li>
           <a target="blank" href="https://www.linkedin.com/in/amandamxi/">

@@ -2,6 +2,7 @@ import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import resumeLink from "../../assets/resume.pdf";
 import {
   faCss,
   faHtml5,
@@ -39,10 +40,7 @@ const About = () => {
             <p>
               I have also worked with WSL, Docker and MySQL. For more
               information, see my{" "}
-              <a
-                target="blank"
-                href="https://drive.google.com/file/d/19EHVbFxRjOp1ohoivOMM3_Mv4--Ka_S-/view?usp=sharing"
-              >
+              <a target="blank" href={resumeLink}>
                 resume.
               </a>
             </p>
