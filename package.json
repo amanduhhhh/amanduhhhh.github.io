@@ -5,6 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "add-domain": "echo \"amandaxi.ca\" > build/CNAME",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
