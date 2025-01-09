@@ -9,9 +9,22 @@ import img4 from "../../assets/art/uhhhC.png";
 import img5 from "../../assets/art/500days.png";
 
 const Design = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImageSrc, setModalImageSrc] = useState("");
   const [letterClass, setLetterClass] = useState("text-animate");
   const [imageClass, setImageClass] = useState("image-animate");
   const imgs = [img1, img2, img3, img4, img5];
+
+  const handleImageClick = (src: string) => {
+    setModalImageSrc(src);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setModalImageSrc("");
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setImageClass("image-hover");
@@ -25,7 +38,7 @@ const Design = () => {
   }, []);
   return (
     <>
-      <div className="design-page">
+      <div className={`design-page ${isModalOpen && "blurred"}`}>
         <div className="text-area">
           <h1>
             <AnimatedLetters
@@ -43,12 +56,22 @@ const Design = () => {
           {imgs.map((pic, index) => {
             return (
               <div className="img-container" key={index}>
-                <img className={imageClass} src={pic} id={"img_" + index} />
+                <img
+                  className={imageClass}
+                  src={pic}
+                  id={"img_" + index}
+                  onClick={() => handleImageClick(pic)}
+                />
               </div>
             );
           })}
         </div>
       </div>
+      {isModalOpen && (
+        <div className="modal" onClick={handleCloseModal}>
+          <img src={modalImageSrc} alt="Enlarged" className="enlarged-image" />
+        </div>
+      )}
       <Loader type="pacman" active={true} />
     </>
   );
