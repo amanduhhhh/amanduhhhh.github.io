@@ -4,9 +4,6 @@
   }
 }
 .stage-cube {
-  @media (width<=50em) {
-    display: none;
-  }
   width: 50%;
   height: 100%;
   top: 80%;
@@ -26,7 +23,9 @@
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
-
+    @media (width<=50em) {
+      display: none;
+    }
     div {
       position: absolute;
       width: 200px;
