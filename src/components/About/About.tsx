@@ -37,13 +37,13 @@ const About = () => {
             such as Java, Python, HTML, CSS, and Javascript/Typescript, as well
             as frameworks like React. Make sure to take a look at my{" "}
             <Link to="/projects">projects!</Link>
-            <p>
-              I have also worked with WSL, Docker and MySQL. For more
-              information, see my{" "}
-              <a target="blank" href={resumeLink}>
-                resume.
-              </a>
-            </p>
+          </p>
+          <p>
+            I have also worked with WSL, Docker and MySQL. For more information,
+            see my{" "}
+            <a target="blank" href={resumeLink}>
+              resume.
+            </a>
           </p>
           <p>
             Besides coding, I'm also a digital artist proficient in{" "}

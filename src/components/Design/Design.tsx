@@ -42,7 +42,7 @@ const Design = () => {
         <div className="gallery">
           {imgs.map((pic, index) => {
             return (
-              <div className="img-container">
+              <div className="img-container" key={index}>
                 <img className={imageClass} src={pic} id={"img_" + index} />
               </div>
             );

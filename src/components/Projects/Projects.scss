@@ -1,0 +1,19 @@
+.project-page {
+  overflow-y: scroll;
+  .text-area {
+    left: 6%;
+  }
+}
+.project-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: left;
+  z-index: 1;
+  top: 22vh;
+  left: 5%;
+  position: relative;
+  width: 87%;
+  padding-bottom: 3rem;
+}
