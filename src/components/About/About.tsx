@@ -46,13 +46,13 @@ const About = () => {
             </a>
           </p>
           <p>
-            Besides coding, I'm also a digital artist proficient in{" "}
+            Besides coding, I'm an absolute fiend for Minesweeper (current
+            record is 95s on Expert), and a digital artist proficient in{" "}
             <span className="highlighted-2">
               art, animation, and graphic design.
             </span>{" "}
             <Link to="/design">Take a peek!</Link>
           </p>
-
           <h2>awards and achievements:</h2>
           <ul>
             <li>
