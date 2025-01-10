@@ -16,6 +16,7 @@ $primary-color: rgb(249, 198, 207);
   font-style: normal;
 }
 
+// button settings
 .flat-button {
   color: #f9c6cf;
   font-size: 16px;
@@ -27,7 +28,7 @@ $primary-color: rgb(249, 198, 207);
   border: 1px solid #f9c6cf;
   margin-top: 25px;
   float: left;
-  animation: bounceInUp 1.5s 1.7s backwards;
+  animation: bounceInUp 1.5s 2s backwards;
   white-space: nowrap;
 
   &:hover {

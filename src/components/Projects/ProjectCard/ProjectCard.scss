@@ -62,7 +62,7 @@ a {
   opacity: 0;
   animation: fadeInUp 1s forwards;
 }
-@for $i from 0 through 4 {
+@for $i from 0 through 10 {
   .card-animate[id="card_#{$i}"] {
     animation-delay: #{calc(($i + 20) / 10)}s;
     h2 {

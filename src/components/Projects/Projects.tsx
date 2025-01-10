@@ -6,12 +6,13 @@ import "./Projects.scss";
 import ProjectCardInfo from "./ProjectCardInfo";
 import froggyJump from "../../assets/images/FroggyJump.png";
 import portfolio from "../../assets/images/logo.svg";
+import huffman from "../../assets/images/Huffman.png";
 import dash from "../../assets/images/Dash.png";
 import physicsSim from "../../assets/images/Physics.png";
 import tihkoosue from "../../assets/images/Tihkoosue.png";
 
 const Projects = () => {
-  const imgs = [portfolio, froggyJump, dash, physicsSim, tihkoosue];
+  const imgs = [portfolio, huffman, froggyJump, dash, physicsSim, tihkoosue];
   const [cardClass, setCardClass] = useState("card-animate");
   const [letterClass, setLetterClass] = useState("text-animate");
 

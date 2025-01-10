@@ -11,7 +11,21 @@ const ProjectCardInfo = [
     projectLink: "https://github.com/amanduhhhh/amanduhhhh.github.io",
     year: "2025",
   },
-
+  {
+    title: "Huffman Compression",
+    description: (
+      <>
+        <span className="highlighted-2">
+          Java: (Data algorithms - BinaryTree, LinkedList, PriorityQueue from
+          scratch).
+        </span>{" "}
+        Simple program to map character frequencies to a binary tree and encode
+        files using Huffman Compression System.
+      </>
+    ),
+    projectLink: "https://github.com/amanduhhhh/Huffman-Compression",
+    year: "2025",
+  },
   {
     title: "Froggy Jump!",
     description: (
