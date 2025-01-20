@@ -12,6 +12,21 @@ const ProjectCardInfo = [
     year: "2025",
   },
   {
+    title: "Refyne",
+    description: (
+      <>
+        <span className="highlighted-2">
+          React, Javascript, Python, Flask, Whisper API: (prompt engineering,
+          REST API).
+        </span>{" "}
+        UoftHacks 12: AI-powered behavioral interview preparation platform that
+        delivers personalized, actionable insights.
+      </>
+    ),
+    projectLink: "https://github.com/UOFTHACKSLEET/uofthacks-updated",
+    year: "2025",
+  },
+  {
     title: "Huffman Compression",
     description: (
       <>
