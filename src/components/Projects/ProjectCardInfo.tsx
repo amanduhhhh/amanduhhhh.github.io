@@ -42,35 +42,6 @@ const ProjectCardInfo = [
     year: "2025",
   },
   {
-    title: "Froggy Jump!",
-    description: (
-      <>
-        <span className="highlighted-2">
-          Python, Pygame: (sound design, collision mechanics, animation,
-          self-drawn sprites).
-        </span>{" "}
-        Play as a frog, jumping between logs and ascending towards the stars.
-        Shoot down enemies with your nimble tongue!
-      </>
-    ),
-    projectLink: "https://github.com/amanduhhhh/FROGGY-JUMP",
-    year: "2022",
-  },
-  {
-    title: "Dash!",
-    description: (
-      <>
-        <span className="highlighted-2">
-          Python, Pygame: (sound design, collision mechanics, animation).
-        </span>{" "}
-        Become a fearless adventurer, dashing through fields of green. Jump to
-        avoid trees and bushes, duck to avoid flying animals!
-      </>
-    ),
-    projectLink: "https://github.com/amanduhhhh/DASH-",
-    year: "2022",
-  },
-  {
     title: "Physics Sim",
     description: (
       <>
@@ -98,6 +69,35 @@ const ProjectCardInfo = [
     ),
     projectLink: "https://github.com/amanduhhhh/Tihkoosue",
     year: "2023",
+  },
+  {
+    title: "Froggy Jump!",
+    description: (
+      <>
+        <span className="highlighted-2">
+          Python, Pygame: (sound design, collision mechanics, animation,
+          self-drawn sprites).
+        </span>{" "}
+        Play as a frog, jumping between logs and ascending towards the stars.
+        Shoot down enemies with your nimble tongue!
+      </>
+    ),
+    projectLink: "https://github.com/amanduhhhh/FROGGY-JUMP",
+    year: "2022",
+  },
+  {
+    title: "Dash!",
+    description: (
+      <>
+        <span className="highlighted-2">
+          Python, Pygame: (sound design, collision mechanics, animation).
+        </span>{" "}
+        Become a fearless adventurer, dashing through fields of green. Jump to
+        avoid trees and bushes, duck to avoid flying animals!
+      </>
+    ),
+    projectLink: "https://github.com/amanduhhhh/DASH-",
+    year: "2022",
   },
 ];
 

@@ -17,10 +17,10 @@ const Projects = () => {
     portfolio,
     refyne,
     huffman,
-    froggyJump,
-    dash,
     physicsSim,
     tihkoosue,
+    froggyJump,
+    dash,
   ];
   const [cardClass, setCardClass] = useState("card-animate");
   const [letterClass, setLetterClass] = useState("text-animate");
