@@ -11,7 +11,7 @@ import huffman from "../../assets/images/Huffman.png";
 import dash from "../../assets/images/Dash.png";
 import physicsSim from "../../assets/images/Physics.png";
 import tihkoosue from "../../assets/images/Tihkoosue.png";
-import lecrochet from "../../assets/images/LeCrochet.png";
+import lecrochet from "../../assets/images/lecrochet.png";
 
 const Projects = () => {
   const imgs = [
