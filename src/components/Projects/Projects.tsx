@@ -11,9 +11,11 @@ import huffman from "../../assets/images/Huffman.png";
 import dash from "../../assets/images/Dash.png";
 import physicsSim from "../../assets/images/Physics.png";
 import tihkoosue from "../../assets/images/Tihkoosue.png";
+import lecrochet from "../../assets/images/LeCrochet.png";
 
 const Projects = () => {
   const imgs = [
+    lecrochet,
     portfolio,
     refyne,
     huffman,
@@ -35,7 +37,7 @@ const Projects = () => {
       if (projectPage) {
         projectPage.style.overflowX = "auto";
       }
-    }, 3400);
+    }, 3800);
     return () => clearTimeout(timer);
   }, []);
 

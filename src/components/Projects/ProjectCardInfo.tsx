@@ -1,5 +1,17 @@
 const ProjectCardInfo = [
   {
+    title: "Le Crochet",
+    description: (
+      <>
+        <span className="highlighted-2">Next.js, Typescript, Three.js: </span> Using CrocheTeX, 
+        our newly designed crochet markup language à la LaTeX, design, share, and monetize your
+        2D and 3D crochet patterns!
+      </>
+    ),
+    projectLink: "https://lecrochet.online",
+    year: "2025",
+  },
+  {
     title: "Portfolio Site",
     description: (
       <>
