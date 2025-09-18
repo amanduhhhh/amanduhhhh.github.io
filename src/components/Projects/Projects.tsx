@@ -12,9 +12,11 @@ import dash from "../../assets/images/Dash.png";
 import physicsSim from "../../assets/images/Physics.png";
 import tihkoosue from "../../assets/images/Tihkoosue.png";
 import lecrochet from "../../assets/images/lecrochet.png";
+import bargainbites from "../../assets/images/bargainbites.png"
 
 const Projects = () => {
   const imgs = [
+    bargainbites,
     lecrochet,
     portfolio,
     refyne,

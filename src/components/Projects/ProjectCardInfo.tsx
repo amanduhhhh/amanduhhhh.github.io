@@ -1,5 +1,16 @@
 const ProjectCardInfo = [
   {
+    title: "Bargain Bites",
+    description: (
+      <>
+        <span className="highlighted-2">Next.js, Typescript, Gemini API: </span> Save more. Eat better. We scrape your local flyers to 
+        formulate the perfect weekly grocery list, complete with meal plans and detailed recipes. 
+      </>
+    ),
+    projectLink: "https://bargainbites-gamma.vercel.app",
+    year: "2025",
+  },
+  {
     title: "Le Crochet",
     description: (
       <>
