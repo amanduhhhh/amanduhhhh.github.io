@@ -43,14 +43,14 @@ const Contact = () => {
           () => {
             setIsSubmitting(false);
             setIsSent(true);
-            // formResult.forEach((input) => {
-            //   if (
-            //     input instanceof HTMLInputElement ||
-            //     input instanceof HTMLTextAreaElement
-            //   ) {
-            //     input.value = "";
-            //   }
-            // });
+            
+            if (refForm.current) {
+              refForm.current.reset();
+            }
+            
+            setTimeout(() => {
+              setIsSent(false);
+            }, 3000);
             // navigate("/amandaxi");
           },
           (error) => {
