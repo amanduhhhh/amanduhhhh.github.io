@@ -8,6 +8,7 @@ import { FormEvent, useRef, useEffect, useState } from "react";
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSent, setIsSent] = useState(false);
   const refForm = useRef<HTMLFormElement>(null);
   // const formResult = document.querySelectorAll("input, textarea");
   // const navigate = useNavigate();
@@ -40,9 +41,8 @@ const Contact = () => {
         )
         .then(
           () => {
-            alert("sent!");
             setIsSubmitting(false);
-            window.location.reload();
+            setIsSent(true);
             // formResult.forEach((input) => {
             //   if (
             //     input instanceof HTMLInputElement ||
@@ -118,11 +118,11 @@ const Contact = () => {
                   <input
                     type="submit"
                     className="flat-button"
-                    value="send"
+                    value={isSent ? "sent!" : "send"}
                     name="subject"
                     placeholder="subject"
                     required
-                    disabled={isSubmitting}
+                    disabled={isSubmitting || isSent}
                   />
                 </li>
               </ul>
