@@ -1,10 +1,39 @@
 const ProjectCardInfo = [
   {
+    title: "Mosaic",
+    description: (
+      <>
+        <span className="highlighted-2">
+          Next.js, Typescript, FastAPI, LiteLLM:{" "}
+        </span>
+        AI co-pilot that turns natural-language prompts into live data
+        dashboards, hot-swaps themes instantly, and streams hydrated components
+        as layouts evolve.
+      </>
+    ),
+    projectLink: "https://github.com/amanduhhhh/Mosaic",
+    year: "2025",
+  },
+  {
+    title: "Oubliette",
+    description: (
+      <>
+        <span className="highlighted-2">C++, SFML: </span> You (Dogmog) dodge
+        three AI hunters in a roguelike maze runner. A*, Dijkstra, and greedy
+        BFS algorithms track you through procedural dungeons.
+      </>
+    ),
+    projectLink: "https://github.com/amanduhhhh/Oubliette",
+    year: "2025",
+  },
+  {
     title: "Bargain Bites",
     description: (
       <>
-        <span className="highlighted-2">Next.js, Typescript, Gemini API: </span> Save more. Eat better. We scrape your local flyers to 
-        formulate the perfect weekly grocery list, complete with meal plans and detailed recipes. 
+        <span className="highlighted-2">Next.js, Typescript, Gemini API: </span>{" "}
+        Save more. Eat better. We scrape your local flyers to formulate the
+        perfect weekly grocery list, complete with meal plans and detailed
+        recipes.
       </>
     ),
     projectLink: "https://bargainbites-gamma.vercel.app",
@@ -14,9 +43,9 @@ const ProjectCardInfo = [
     title: "Le Crochet",
     description: (
       <>
-        <span className="highlighted-2">Next.js, Typescript, Three.js: </span> Using CrocheTeX, 
-        our newly designed crochet markup language à la LaTeX, design, share, and monetize your
-        2D and 3D crochet patterns!
+        <span className="highlighted-2">Next.js, Typescript, Three.js: </span>{" "}
+        Using CrocheTeX, our newly designed crochet markup language à la LaTeX,
+        design, share, and monetize your 2D and 3D crochet patterns!
       </>
     ),
     projectLink: "https://lecrochet.online",

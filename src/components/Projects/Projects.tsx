@@ -13,9 +13,13 @@ import physicsSim from "../../assets/images/Physics.png";
 import tihkoosue from "../../assets/images/Tihkoosue.png";
 import lecrochet from "../../assets/images/lecrochet.png";
 import bargainbites from "../../assets/images/bargainbites.png"
+import mosaic from "../../assets/images/mosaic.png"
+import oubliette from "../../assets/images/oubliette.png"
 
 const Projects = () => {
   const imgs = [
+    mosaic,
+    oubliette,
     bargainbites,
     lecrochet,
     portfolio,
