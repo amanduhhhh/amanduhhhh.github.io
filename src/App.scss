@@ -127,7 +127,7 @@ h2 {
     display: table-cell;
 
     p {
-      @for $i from 1 through 3 {
+      @for $i from 1 through 4 {
         &:nth-of-type(#{$i}) {
           animation-delay: #{1.5 + (0.2 * ($i - 1))}s;
         }
