@@ -1,7 +1,7 @@
 import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import resumeLink from "../../assets/resume.pdf";
 import {
   faCss,
