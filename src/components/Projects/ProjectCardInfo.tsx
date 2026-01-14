@@ -75,7 +75,7 @@ const ProjectCardInfo = [
         delivers personalized, actionable insights.
       </>
     ),
-    projectLink: "https://github.com/UOFTHACKSLEET/uofthacks-updated",
+    projectLink: "https://dorahacks.io/buidl/21723",
     year: "2025",
   },
   {

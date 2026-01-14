@@ -6,12 +6,11 @@
 .container {
   overflow: hidden;
   will-change: contents;
-  height: 90%;
+  height: 100%;
   width: calc(100% - 60px);
   min-height: 566px;
   position: absolute;
   opacity: 0;
-  top: 5%;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;

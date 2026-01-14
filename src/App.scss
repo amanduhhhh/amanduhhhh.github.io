@@ -75,7 +75,6 @@ li {
   font-family: sans-serif;
   font-size: 15px;
   opacity: 0;
-  line-height: 2rem;
   animation: pulse 1s, fadeIn 1s 1.5s forwards;
   a {
     color: #f299a9;
@@ -88,7 +87,9 @@ li {
 }
 p {
   min-width: fit-content;
+  line-height: 2rem;
 }
+
 h1 {
   font-size: 64px;
   margin: 0;

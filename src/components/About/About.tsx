@@ -1,7 +1,7 @@
 import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import resumeLink from "../../assets/resume.pdf";
 import {
   faCss,
@@ -33,49 +33,38 @@ const About = () => {
           </h1>
           <p>
             I'm a <span className="highlighted-2">CS + Co-op student</span> at
-            the University of Waterloo, with extensive experience in languages
-            such as Java, Python, HTML, CSS, and Javascript/Typescript, as well
-            as frameworks like React. Make sure to take a look at my{" "}
+            the University of Waterloo. I've built countless full-stack applications, from web apps for crochet pattern design to patient portal mobile apps. Learn more in my {" "}
             <Link to="/projects">projects!</Link>
           </p>
           <p>
-            I have also worked with WSL, Docker and MySQL. For more information,
-            see my{" "}
+            Or, for just the gist of it, take a look at my {" "}
             <a target="blank" href={resumeLink}>
               resume.
             </a>
           </p>
           <p>
-            Besides coding, I'm an absolute fiend for Minesweeper (current
-            record is 95s on Expert), and a digital artist proficient in{" "}
-            <span className="highlighted-2">
-              art, animation, and graphic design.
-            </span>{" "}
-            <Link to="/design">Take a peek!</Link>
+            Besides coding, I'm an absolute puzzle fiend. Be it <span className="highlighted-2">minesweeper</span>, <span className="highlighted-2">crosswords</span>, or <span className="highlighted-2">90's point and click adventure games</span> (LucasArts especially), if I'm not coding, I've got my head buried in one of these.
           </p>
-          <h2>awards and achievements:</h2>
+          <p>
+            That, or a drawing. {" "}
+            <Link to="/design">Take a peek at my art!</Link>
+          </p>
+          <h2>what i've been up to:</h2>
           <ul>
             <li>
-              Governor General's Academic Medal{" "}
+              Currently in the process of completing a {" "}
               <span className="highlighted-2">
-                (Highest Grade 11/12 average)
-              </span>
+                Ubisoft mentorship
+              </span>, where I'll be developing a game under industry leadership!
             </li>
             <li>
-              CanHack CTF 2022 -{" "}
+              This term, I'll also be a developer on <span className="highlighted-2">UWaterloo's Blueprint chapter</span>.
+            </li>
+            <li>
+              From May - December 2025, I completed a software internship at {""}
               <span className="highlighted-2">
-                First Place School Team in Canada
-              </span>
-            </li>
-            <li>
-              <span className="highlighted-2">Top 25%</span> in CCC Jr 2022
-            </li>
-            <li>
-              <span className="highlighted-2">Top 25%</span> in CCC Sr 2024
-            </li>
-            <li>
-              <span className="highlighted-2">Ted Rogers Future Leaders</span>{" "}
-              scholarship recipient
+                Oak Ridges Heart Centre
+              </span>, where I developed an <span className="highlighted-2">AI clinic scribe</span>, a <span className="highlighted-2">food portion size model</span>, and a <span className="highlighted-2">mobile app</span>, amongst other things.  
             </li>
           </ul>
         </div>
