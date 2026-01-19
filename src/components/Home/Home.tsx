@@ -5,6 +5,7 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Logo from "./Logo/Logo";
 import Loader from "react-loaders";
 import resumeLink from "../../assets/resume.pdf";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -39,9 +40,9 @@ function Home() {
               university of waterloo
             </a>
           </h2>
-          <a target="_blank" href={resumeLink} className="flat-button">
-            resume
-          </a>
+          <Link to="/about" className="flat-button">
+            about me
+          </Link>
         </div>
         <Logo />
         <div className="alert">
