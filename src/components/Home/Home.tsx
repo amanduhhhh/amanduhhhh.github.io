@@ -1,10 +1,8 @@
-// import { Link } from "react-router-dom";
 import "./Home.scss";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Logo from "./Logo/Logo";
 import Loader from "react-loaders";
-import resumeLink from "../../assets/resume.pdf";
 import { Link } from "react-router-dom";
 
 function Home() {
