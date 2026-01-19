@@ -15,9 +15,11 @@ import lecrochet from "../../assets/images/lecrochet.png";
 import bargainbites from "../../assets/images/bargainbites.png"
 import mosaic from "../../assets/images/mosaic.png"
 import oubliette from "../../assets/images/oubliette.png"
+import toBikeTo from "../../assets/images/tobiketo.png"
 
 const Projects = () => {
   const imgs = [
+    toBikeTo,
     mosaic,
     oubliette,
     bargainbites,
