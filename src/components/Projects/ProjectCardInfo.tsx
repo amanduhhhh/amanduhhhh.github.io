@@ -12,7 +12,7 @@ const ProjectCardInfo = [
       </>
     ),
     projectLink: "https://to-bike-to.streamlit.app",
-    year: "2025",
+    year: "2026",
   },
   {
     title: "Mosaic",
