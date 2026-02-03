@@ -61,6 +61,11 @@ const About = () => {
               This term, I'll also be a developer on <span className="highlighted-2">UWaterloo's Blueprint chapter</span>.
             </li>
             <li>
+              I also served as Waterloo's <span className="highlighted-2">Campus Crusade for Cheese president</span>. 
+              I have thenceforth committed myself to sampling one new cheese every week. 
+              Saint Albray's is a recent favourite.
+            </li>
+            <li>
               From May - December 2025, I completed a software internship at {""}
               <span className="highlighted-2">
                 Oak Ridges Heart Centre
