@@ -2,7 +2,6 @@ import "./About.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import resumeLink from "../../assets/resume.pdf";
 import {
   faCss,
   faHtml5,
@@ -15,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Loader from "react-loaders";
 const About = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  const [showHint, setShowHint] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => setLetterClass("text-animate-hover"), 2400);
     return () => clearTimeout(timer);
@@ -31,21 +31,16 @@ const About = () => {
               idx={12}
             />
           </h1>
+
           <p>
             I'm a <span className="highlighted-2">CS + Co-op student</span> at
             the University of Waterloo. I've built countless full-stack
             applications, from web apps for crochet pattern design to patient
-            portal mobile apps. Learn more in my{" "}
-            <Link to="/projects">projects!</Link>
+            portals used in real health centres! Learn more in my{" "}
+            <Link to="/projects">projects.</Link>
           </p>
           <p>
-            Or, for just the gist of it, take a look at my{" "}
-            <a target="blank" href={resumeLink}>
-              resume.
-            </a>
-          </p>
-          <p>
-            Besides coding, I'm an absolute puzzle fiend. Be it{" "}
+            I'm also an absolute puzzle fiend. Be it{" "}
             <span className="highlighted-2">minesweeper</span>,{" "}
             <span className="highlighted-2">crosswords</span>, or{" "}
             <span className="highlighted-2">
@@ -55,7 +50,31 @@ const About = () => {
             in one of these.
           </p>
           <p>
-            That, or a drawing. <Link to="/design">Take a peek at my art!</Link>
+            Recently, I've been obsessed with{" "}
+            <a href="https://www.minutecryptic.com/" target="blank">
+              cryptic crossword
+            </a>{" "}
+            clues. Here's one for you:
+          </p>
+          <p>
+            <i>Ghost hunter spaceman lost: southeast? (3, 3) </i>
+            <span
+              className="highlighted-2"
+              onClick={() => setShowHint(!showHint)}
+              style={{ cursor: "pointer" }}
+            >
+              Need a hint?
+            </span>
+            {showHint && (
+              <>
+                <br />
+                Refresh the page. What do you see? Think you've solved it?{" "}
+                <Link to="/contact">Let me know :)</Link>
+              </>
+            )}
+          </p>
+          <p>
+            Also! I draw! <Link to="/design">Take a peek at my art!</Link>
           </p>
           <h2>what i've been up to:</h2>
           <ul>
