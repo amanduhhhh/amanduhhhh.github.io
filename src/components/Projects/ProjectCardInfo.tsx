@@ -1,11 +1,23 @@
 const ProjectCardInfo = [
   {
+    title: "Sensa",
+    description: (
+      <>
+        <span className="highlighted-2">Figma, React PWA: </span>A privacy first
+        progressive web app designed to help low-vision users manage
+        menstrual health, featuring WCAG AAA accessible design, and entirely
+        client-side fine-tuned EfficientNet models trained on ethical synthetic
+        data.
+      </>
+    ),
+    projectLink: "https://sensa-app.vercel.app",
+    year: "2026",
+  },
+  {
     title: "To-bike-to",
     description: (
       <>
-        <span className="highlighted-2">
-          Python, Pandas, Streamlit:{" "}
-        </span>
+        <span className="highlighted-2">Python, Pandas, Streamlit: </span>
         Real-time visualization of Toronto bike share stations with live
         availability data. Enter your address to find the nearest station with
         bikes available, then export your route to Google Maps.

@@ -12,13 +12,15 @@ import dash from "../../assets/images/Dash.png";
 import physicsSim from "../../assets/images/Physics.png";
 import tihkoosue from "../../assets/images/Tihkoosue.png";
 import lecrochet from "../../assets/images/lecrochet.png";
-import bargainbites from "../../assets/images/bargainbites.png"
-import mosaic from "../../assets/images/mosaic.png"
-import oubliette from "../../assets/images/oubliette.png"
-import toBikeTo from "../../assets/images/tobiketo.png"
+import bargainbites from "../../assets/images/bargainbites.png";
+import mosaic from "../../assets/images/mosaic.png";
+import oubliette from "../../assets/images/oubliette.png";
+import toBikeTo from "../../assets/images/tobiketo.png";
+import sensa from "../../assets/images/sensa.png";
 
 const Projects = () => {
   const imgs = [
+    sensa,
     toBikeTo,
     mosaic,
     oubliette,
@@ -40,7 +42,7 @@ const Projects = () => {
       setCardClass("card-animate-hover");
       setLetterClass("text-animate-hover");
       const projectPage = document.querySelector(
-        ".project-page"
+        ".project-page",
       ) as HTMLElement;
       if (projectPage) {
         projectPage.style.overflowX = "auto";
