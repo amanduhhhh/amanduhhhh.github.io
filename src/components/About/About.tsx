@@ -79,13 +79,28 @@ const About = () => {
           <h2>what i've been up to:</h2>
           <ul>
             <li>
-              Currently a platform developer for{" "}
-              <span className="highlighted-2">Hack The North!</span>
+              Developing{" "}
+              <a
+                href="https://hackthenorth.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                hackthenorth.com
+              </a>
+              {" "} frontend systems, and led development on our (objectively) coolest{" "}
+              <a
+                href="https://apply.hackthenorth.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                hacker apps
+              </a>
+              {" "} to date!
             </li>
             <li>
-              In the process of completing a{" "}
-              <span className="highlighted-2">Ubisoft mentorship</span>, where
-              I'll be developing a game under industry leadership!
+              Completed a{" "}
+              <span className="highlighted-2">Ubisoft mentorship</span>, where I
+              developed a game under industry leadership.
             </li>
             <li>
               I also served as Waterloo's{" "}
