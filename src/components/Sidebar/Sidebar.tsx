@@ -6,6 +6,7 @@ import {
   faEnvelope,
   faFolder,
   faHome,
+  faPenNib,
   faUser,
   // faFile,
 } from "@fortawesome/free-solid-svg-icons";
@@ -42,6 +43,12 @@ function Sidebar() {
           to="/design"
         >
           <FontAwesomeIcon icon={faBrush} color="#60837F" />
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/writings"
+        >
+          <FontAwesomeIcon icon={faPenNib} color="#60837F" />
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
