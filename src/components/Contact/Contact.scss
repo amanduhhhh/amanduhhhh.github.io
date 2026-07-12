@@ -1,3 +1,5 @@
+@use "../../variables" as *;
+
 .contact-form {
   margin-top: 20px;
   ul {
@@ -30,8 +32,8 @@
   input[type="email"] {
     width: 100%;
     border: 0;
-    background: #60837f;
-    color: #fff9f9;
+    background: $surface-muted;
+    color: $text;
     height: 50px;
     font-size: 16px;
     padding: 0 2rem;
@@ -45,8 +47,8 @@
   textarea {
     width: 100%;
     border: 0;
-    background: #60837f;
-    color: #fff9f9;
+    background: $surface-muted;
+    color: $text;
     padding: 2rem;
     font-size: 16px;
     box-sizing: border-box;
@@ -62,6 +64,6 @@ input[type="email"],
 textarea {
   outline: none;
   &:focus {
-    border-bottom: 2px solid rgb(249, 198, 207);
+    border-bottom: 2px solid $highlight-2;
   }
 }

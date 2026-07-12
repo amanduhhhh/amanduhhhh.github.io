@@ -1,5 +1,7 @@
+@use "../../variables" as *;
+
 .navigation {
-  background: rgb(11, 37, 39);
+  background: $sidebar-bg;
   width: 60px;
   height: 100%;
   position: fixed;
@@ -46,7 +48,7 @@
 
     a.active {
       svg {
-        color: #f9c6cf;
+        color: $highlight-2;
       }
     }
   }
