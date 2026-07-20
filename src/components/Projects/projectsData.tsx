@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 
 // card thumbnails (per-project folders)
 import sensaCard from "../../assets/projects/sensa/card.webp";
+import parcoursLabCard from "../../assets/projects/parcours-lab/card.webp";
 import toBikeToCard from "../../assets/projects/to-bike-to/card.webp";
 import mosaicCard from "../../assets/projects/mosaic/card.webp";
 import oublietteCard from "../../assets/projects/oubliette/card.webp";
@@ -60,6 +61,11 @@ import sensa03 from "../../assets/projects/sensa/03.webp";
 import sensa04 from "../../assets/projects/sensa/04.webp";
 import sensaDemo from "../../assets/projects/sensa/sensa-demo.mp4";
 import sensaDemoPoster from "../../assets/projects/sensa/sensa-demo-poster.webp";
+
+// parcours lab detail media
+import parcoursLab01 from "../../assets/projects/parcours-lab/01.webp";
+import parcoursLab02 from "../../assets/projects/parcours-lab/02.webp";
+import parcoursLab03 from "../../assets/projects/parcours-lab/03.webp";
 
 // physics sim detail media
 import physicsEnergy from "../../assets/projects/physics-sim/energy.mp4";
@@ -167,6 +173,67 @@ export const projects: Project[] = [
     ],
     viewProject: "https://sensa-app.vercel.app",
     viewRepo: "https://github.com/amanduhhhh/sensa-deploy",
+  },
+  {
+    slug: "parcours-lab",
+    title: "Parcours Lab",
+    date: "2026",
+    cardImage: parcoursLabCard,
+    cardBlurb: (
+      <>
+        <span className="highlighted-2">Next.js, Flask: </span>
+        Course and career roadmap planner that recommends university or online
+        learning paths, then lets users reshape their plan through chat.
+      </>
+    ),
+    description: (
+      <>
+        Parcours Lab is a course and career planner built in conjunction with
+        the Human Feedback Foundation for AI Tinkerers Toronto. We demoed it at
+        Shopify headquarters and earned the highest-rated demo of the event!
+        <br />
+        <br />
+        Users can build a roadmap from university courses or online learning
+        options based on their goals, interests, and constraints. We vectorized
+        course data and mapped courses against ESCO's real skills ontology, so
+        users can see which employer-valued skills they are targeting and what
+        to develop next. We also added a chatbot that can update the roadmap
+        directly through conversation instead of making users manually rebuild
+        their plan.
+      </>
+    ),
+    developedFor: "Human Feedback Foundation",
+    role: ["Developer", "Designer"],
+    specs: {
+      frameworks: ["React", "Flask"],
+      languages: ["TypeScript", "Python"],
+      tools: ["Supabase", "OpenRouter", "Vector Search", "ESCO"],
+    },
+    media: [
+      {
+        type: "youtube",
+        src: "FkpmBqb6L-I",
+        alt: "Parcours Lab demo",
+      },
+      {
+        type: "image",
+        src: parcoursLab01,
+        alt: "Parcours Lab roadmap builder",
+      },
+      {
+        type: "image",
+        src: parcoursLab02,
+        alt: "Parcours Lab course recommendations",
+      },
+      {
+        type: "image",
+        src: parcoursLab03,
+        alt: "Demo Day presentation",
+        caption: "That's me on the left!",
+      },
+    ],
+    viewProject: "https://parcours-lab.vercel.app",
+    viewRepo: "https://github.com/aaryanshroff/parcours-lab",
   },
   {
     slug: "to-bike-to",
