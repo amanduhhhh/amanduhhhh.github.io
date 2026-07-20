@@ -26,14 +26,19 @@ import refyne02 from "../../assets/projects/refyne/02.webp";
 import refyne03 from "../../assets/projects/refyne/03.webp";
 
 // to-bike-to detail media
-import toBikeTo01 from "../../assets/projects/to-bike-to/01.png";
-import toBikeTo02 from "../../assets/projects/to-bike-to/02.png";
-import toBikeTo03 from "../../assets/projects/to-bike-to/03.png";
+import toBikeTo01 from "../../assets/projects/to-bike-to/01.webp";
+import toBikeTo02 from "../../assets/projects/to-bike-to/02.webp";
+import toBikeTo03 from "../../assets/projects/to-bike-to/03.webp";
 
 // mosaic detail media
-import mosaic01 from "../../assets/projects/mosaic/01.png";
-import mosaic02 from "../../assets/projects/mosaic/02.png";
-import mosaic03 from "../../assets/projects/mosaic/03.png";
+import mosaic01 from "../../assets/projects/mosaic/01.webp";
+import mosaic02 from "../../assets/projects/mosaic/02.webp";
+import mosaic03 from "../../assets/projects/mosaic/03.webp";
+
+// oubliette detail media
+import oubliette01 from "../../assets/projects/oubliette/01.webp";
+import oublietteDemo from "../../assets/projects/oubliette/oubliette-demo-optimized.mp4";
+import oublietteDemoPoster from "../../assets/projects/oubliette/oubliette-demo-poster.webp";
 
 // sensa detail media
 import sensa01 from "../../assets/projects/sensa/01.webp";
@@ -271,6 +276,46 @@ export const projects: Project[] = [
         BFS algorithms track you through procedural dungeons.
       </>
     ),
+    description: (
+      <>
+        Oubliette is a roguelike maze runner that teaches pathfinding through
+        gameplay instead of lectures. You play as Dogmog, searching a
+        procedurally generated dungeon for a key and exit while three enemies
+        chase you with different algorithms: A* as the balanced hunter, Dijkstra
+        as the slower but exact tracker, and Best-First Search as the fast,
+        greedy, chaotic pursuer.
+        <br />
+        <br />
+        We built the game in C++ with SFML, using DFS maze generation with extra
+        branching paths so each run has a guaranteed solution but still feels
+        varied. Enemy speeds, spawn distances, round progression, and Ghost Mode
+        power-ups were tuned around the different algorithms so the game stayed
+        tense without becoming impossible.
+      </>
+    ),
+    specs: {
+      frameworks: ["SFML"],
+      languages: ["C++"],
+      tools: [
+        "A*",
+        "Dijkstra",
+        "Best-First Search",
+        "DFS Maze Generation",
+      ],
+    },
+    media: [
+      {
+        type: "video",
+        src: oublietteDemo,
+        poster: oublietteDemoPoster,
+        alt: "Oubliette gameplay demo",
+      },
+      {
+        type: "image",
+        src: oubliette01,
+        alt: "Oubliette gameplay screenshot",
+      },
+    ],
     viewRepo: "https://github.com/amanduhhhh/Oubliette",
   },
   {
