@@ -40,6 +40,19 @@ import oubliette01 from "../../assets/projects/oubliette/01.webp";
 import oublietteDemo from "../../assets/projects/oubliette/oubliette-demo-optimized.mp4";
 import oublietteDemoPoster from "../../assets/projects/oubliette/oubliette-demo-poster.webp";
 
+// bargain bites detail media
+import bargainBites01 from "../../assets/projects/bargain-bites/01.webp";
+import bargainBites02 from "../../assets/projects/bargain-bites/02.webp";
+import bargainBites03 from "../../assets/projects/bargain-bites/03.webp";
+import bargainBites04 from "../../assets/projects/bargain-bites/04.webp";
+
+// le crochet detail media
+import leCrochet01 from "../../assets/projects/le-crochet/01.webp";
+import leCrochet02 from "../../assets/projects/le-crochet/02.webp";
+import leCrochet03 from "../../assets/projects/le-crochet/03.webp";
+import leCrochet04 from "../../assets/projects/le-crochet/04.webp";
+import leCrochet05 from "../../assets/projects/le-crochet/05.webp";
+
 // sensa detail media
 import sensa01 from "../../assets/projects/sensa/01.webp";
 import sensa02 from "../../assets/projects/sensa/02.webp";
@@ -331,6 +344,56 @@ export const projects: Project[] = [
         recipes.
       </>
     ),
+    description: (
+      <>
+        Bargain Bites turns scattered grocery flyer deals into practical weekly
+        savings. Users enter their household size, budget, dietary needs,
+        cooking comfort, and transportation limits, then the app generates a
+        personalized meal plan and consolidated shopping list around the best
+        available deals.
+        <br />
+        <br />
+        I worked on a Next.js app that combines flyer scraping, JSON/PDF parsing,
+        store mapping, and AI-assisted meal planning. The main challenge was
+        normalizing messy retailer data, including inconsistent formats and
+        shrinkflation differences, so recommendations stayed reliable,
+        affordable, and realistic for each user's constraints.
+      </>
+    ),
+    specs: {
+      frameworks: ["Next.js", "React", "Prisma"],
+      languages: ["TypeScript"],
+      tools: [
+        "MongoDB",
+        "NextAuth",
+        "Gemini API",
+        "Auth0",
+        "Google OAuth",
+        "Vercel",
+      ],
+    },
+    media: [
+      {
+        type: "image",
+        src: bargainBites01,
+        alt: "Bargain Bites onboarding screen",
+      },
+      {
+        type: "image",
+        src: bargainBites02,
+        alt: "Bargain Bites preferences flow",
+      },
+      {
+        type: "image",
+        src: bargainBites03,
+        alt: "Bargain Bites generated meal plan",
+      },
+      {
+        type: "image",
+        src: bargainBites04,
+        alt: "Bargain Bites shopping list",
+      },
+    ],
     viewProject: "https://bargainbites-gamma.vercel.app",
   },
   {
@@ -345,6 +408,61 @@ export const projects: Project[] = [
         design, share, and monetize your 2D and 3D crochet patterns!
       </>
     ),
+    description: (
+      <>
+        Le Crochet came from a very real crochet problem: I crochet a lot, and
+        the most tedious part is often not knowing how a written pattern will
+        actually look. Traditional instructions are hard to visualize, but I
+        realized crochet notation already reads a lot like a programming
+        language, so turning it into a DSL felt like the natural bridge between
+        craft and code.
+        <br />
+        <br />
+        We built CrocheTeX, a custom TypeScript compiler for writing, validating,
+        and previewing crochet patterns in real time. The platform renders both
+        2D symbol charts and interactive 3D stitch models with yarn flow, while
+        an AI translation tool helps convert traditional written instructions
+        into editable CrocheTeX patterns.
+      </>
+    ),
+    specs: {
+      frameworks: ["Next.js", "React", "Three.js", "Tailwind CSS"],
+      languages: ["TypeScript", "CrocheTeX"],
+      tools: [
+        "React Three Fiber",
+        "Monaco Editor",
+        "Framer Motion",
+        "NextAuth",
+        "Google OAuth",
+      ],
+    },
+    media: [
+      {
+        type: "image",
+        src: leCrochet01,
+        alt: "Le Crochet editor and pattern preview",
+      },
+      {
+        type: "image",
+        src: leCrochet02,
+        alt: "Le Crochet CrocheTeX editor",
+      },
+      {
+        type: "image",
+        src: leCrochet03,
+        alt: "Le Crochet 2D crochet chart",
+      },
+      {
+        type: "image",
+        src: leCrochet04,
+        alt: "Le Crochet 3D stitch visualization",
+      },
+      {
+        type: "image",
+        src: leCrochet05,
+        alt: "Le Crochet pattern customization screen",
+      },
+    ],
     viewProject: "https://le-crochet2.vercel.app",
   },
   {
@@ -376,23 +494,29 @@ export const projects: Project[] = [
         delivers personalized, actionable insights.
       </>
     ),
-    // --- example of a fully-populated project (edit / verify the placeholder fields) ---
     description: (
       <>
         Refyne is an AI-powered behavioral interview prep platform built at
-        UofTHacks 12. It records your spoken answers, transcribes them with the
-        Whisper API, and returns personalized, actionable feedback on structure,
-        clarity, and delivery. The goal was to make interview practice feel like
-        a real conversation rather than a checklist, so candidates can iterate
-        on their storytelling and walk in confident!
+        UofTHacks 12. We wanted to create the soft-skills equivalent of tools
+        like LeetCode: a place to practice storytelling, communication, and
+        confidence with structured feedback instead of going into behavioral
+        interviews underprepared.
+        <br />
+        <br />
+        The app records spoken responses, transcribes them with Whisper, and
+        combines AI feedback with audio-visual metrics like speaking pace,
+        volume, and camera-based analysis. I worked on connecting the React/Vite
+        frontend with the Flask/Python backend, where OpenCV and OpenAI-powered
+        processing turned each practice session into scores, tips, and progress
+        insights.
       </>
     ),
     developedFor: "UofTHacks 12",
-    role: ["Developer"], // TODO: verify / adjust
+    role: ["Developer"],
     specs: {
-      frameworks: ["React", "Flask"],
+      frameworks: ["Vite", "React", "Flask"],
       languages: ["JavaScript", "Python"],
-      tools: ["Whisper API", "REST API"],
+      tools: ["Whisper API", "OpenCV", "OpenAI API", "REST API"],
     },
     media: [
       { type: "youtube", src: "y-TNS84Umo4", alt: "Refyne demo" },

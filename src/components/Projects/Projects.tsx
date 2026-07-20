@@ -35,7 +35,7 @@ const Projects = () => {
             />
           </h1>
 
-          <p>demo videos available on github page!</p>
+          <p>now with actual description pages!!</p>
         </div>
         <div className="project-showcase">
           {projects.map((project, index) => (
