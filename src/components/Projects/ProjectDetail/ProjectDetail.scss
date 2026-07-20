@@ -148,6 +148,8 @@
   .media-image,
   .media-video {
     width: 100%;
+    max-height: 72vh;
+    object-fit: contain;
     border-radius: 8px;
     display: block;
   }
@@ -182,6 +184,10 @@
     }
     .detail-media {
       padding: 3.5rem 0 0;
+    }
+    .media-image,
+    .media-video {
+      max-height: 68vh;
     }
   }
 }

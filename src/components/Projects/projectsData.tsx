@@ -61,6 +61,24 @@ import sensa04 from "../../assets/projects/sensa/04.webp";
 import sensaDemo from "../../assets/projects/sensa/sensa-demo.mp4";
 import sensaDemoPoster from "../../assets/projects/sensa/sensa-demo-poster.webp";
 
+// physics sim detail media
+import physicsEnergy from "../../assets/projects/physics-sim/energy.mp4";
+import physicsEnergyPoster from "../../assets/projects/physics-sim/energy-poster.webp";
+import physicsKinematics from "../../assets/projects/physics-sim/kin.mp4";
+import physicsKinematicsPoster from "../../assets/projects/physics-sim/kin-poster.webp";
+import physicsWaves from "../../assets/projects/physics-sim/waves.mp4";
+import physicsWavesPoster from "../../assets/projects/physics-sim/waves-poster.webp";
+
+// early game detail media
+import dashDemo from "../../assets/projects/dash/video.mp4";
+import dashDemoPoster from "../../assets/projects/dash/video-poster.webp";
+import froggyEasyDemo from "../../assets/projects/froggy-jump/easy.mp4";
+import froggyEasyPoster from "../../assets/projects/froggy-jump/easy-poster.webp";
+import froggyHardDemo from "../../assets/projects/froggy-jump/hard.mp4";
+import froggyHardPoster from "../../assets/projects/froggy-jump/hard-poster.webp";
+import tihkoosueDemo from "../../assets/projects/tihkoosue/video.mp4";
+import tihkoosueDemoPoster from "../../assets/projects/tihkoosue/video-poster.webp";
+
 export interface ProjectMedia {
   type: "image" | "video" | "youtube";
   // image/video: an imported asset. youtube: the video ID only, e.g. the
@@ -531,23 +549,7 @@ export const projects: Project[] = [
     related: ["mosaic", "sensa"],
     viewProject: "https://dorahacks.io/buidl/21723",
   },
-  {
-    slug: "huffman-compression",
-    title: "Huffman Compression",
-    date: "2025",
-    cardImage: huffmanCard,
-    cardBlurb: (
-      <>
-        <span className="highlighted-2">
-          Java: (Data algorithms - BinaryTree, LinkedList, PriorityQueue from
-          scratch).
-        </span>{" "}
-        Simple program to map character frequencies to a binary tree and encode
-        files using Huffman Compression System.
-      </>
-    ),
-    viewRepo: "https://github.com/amanduhhhh/Huffman-Compression",
-  },
+
   {
     slug: "physics-sim",
     title: "Physics Sim",
@@ -562,6 +564,47 @@ export const projects: Project[] = [
         educational simulator. Edit variables and observe the effects.
       </>
     ),
+    description: (
+      <>
+        Physics Sim is an educational Java Swing app I built in my grade 11
+        computer science class to make grade 11 physics concepts easier to
+        explore visually. Instead of only solving equations on paper, users can
+        edit variables and immediately see how the simulation changes.
+        <br />
+        <br />
+        The app includes modules for waves, kinematics, and energy. Waves lets
+        users experiment with standing waves and interference, kinematics shows
+        position, velocity, and acceleration graphs, and energy visualizes
+        potential, kinetic, mechanical, and thermal energy as the system changes.
+      </>
+    ),
+    specs: {
+      frameworks: ["Java Swing"],
+      languages: ["Java"],
+    },
+    media: [
+      {
+        type: "video",
+        src: physicsWaves,
+        poster: physicsWavesPoster,
+        alt: "Physics Sim waves demo",
+        caption: "Wave variables, standing waves, and interference",
+      },
+      {
+        type: "video",
+        src: physicsKinematics,
+        poster: physicsKinematicsPoster,
+        alt: "Physics Sim kinematics demo",
+        caption: "Kinematics variables with position, velocity, and acceleration graphs",
+      },
+      {
+        type: "video",
+        src: physicsEnergy,
+        poster: physicsEnergyPoster,
+        alt: "Physics Sim energy demo",
+        caption: "Potential, kinetic, mechanical, and thermal energy",
+      },
+    ],
     viewRepo: "https://github.com/amanduhhhh/Physics-Sim",
   },
   {
@@ -579,6 +622,31 @@ export const projects: Project[] = [
         sessions!
       </>
     ),
+    description: (
+      <>
+        Tihkoosue is a Java Swing arcade game where a little penguin catches fish
+        while avoiding rotten ones and collecting power-ups. It built on my
+        earlier game projects with more structured collision logic, animation,
+        and score tracking.
+        <br />
+        <br />
+        This project went deeper into file I/O and persistent user data, letting
+        player progress and high scores carry across sessions instead of
+        disappearing when the game closed.
+      </>
+    ),
+    specs: {
+      frameworks: ["Java Swing"],
+      languages: ["Java"],
+    },
+    media: [
+      {
+        type: "video",
+        src: tihkoosueDemo,
+        poster: tihkoosueDemoPoster,
+        alt: "Tihkoosue gameplay demo",
+      },
+    ],
     viewRepo: "https://github.com/amanduhhhh/Tihkoosue",
   },
   {
@@ -596,6 +664,39 @@ export const projects: Project[] = [
         Shoot down enemies with your nimble tongue!
       </>
     ),
+    description: (
+      <>
+        Froggy Jump was a Doodle Jump-style Pygame project I made for grade 11 AP
+        Computer Science. I drew all of the assets myself, which made the project
+        feel especially personal and taught me how much polish can come from
+        small visual details.
+        <br />
+        <br />
+        I learned a lot about sprite animation, object collision, acceleration
+        mechanics, and tuning game feel while building a vertical platformer
+        with enemies, logs, and a frog shooting with its tongue.
+      </>
+    ),
+    specs: {
+      frameworks: ["Pygame"],
+      languages: ["Python"],
+    },
+    media: [
+      {
+        type: "video",
+        src: froggyEasyDemo,
+        poster: froggyEasyPoster,
+        alt: "Froggy Jump easy mode gameplay",
+        caption: "Easy mode gameplay",
+      },
+      {
+        type: "video",
+        src: froggyHardDemo,
+        poster: froggyHardPoster,
+        alt: "Froggy Jump hard mode gameplay",
+        caption: "Hard mode gameplay",
+      },
+    ],
     viewRepo: "https://github.com/amanduhhhh/FROGGY-JUMP",
   },
   {
@@ -612,7 +713,48 @@ export const projects: Project[] = [
         avoid trees and bushes, duck to avoid flying animals!
       </>
     ),
+    description: (
+      <>
+        Dash was my first ever Python project, made in grade 10 with Pygame. It
+        is a simple side-scrolling runner where the player jumps and ducks to
+        avoid obstacles while moving through a looping landscape.
+        <br />
+        <br />
+        Building it taught me the basics of Python through something visual and
+        playable: sprites, sound effects, keyboard input, simple animation, and
+        the core structure of a game loop.
+      </>
+    ),
+    specs: {
+      frameworks: ["Pygame"],
+      languages: ["Python"],
+    },
+    media: [
+      {
+        type: "video",
+        src: dashDemo,
+        poster: dashDemoPoster,
+        alt: "Dash gameplay demo",
+      },
+    ],
     viewRepo: "https://github.com/amanduhhhh/DASH-",
+  },
+  {
+    slug: "huffman-compression",
+    title: "Huffman Compression",
+    date: "2022",
+    cardImage: huffmanCard,
+    cardBlurb: (
+      <>
+        <span className="highlighted-2">
+          Java: (Data algorithms - BinaryTree, LinkedList, PriorityQueue from
+          scratch).
+        </span>{" "}
+        Simple program to map character frequencies to a binary tree and encode
+        files using Huffman Compression System.
+      </>
+    ),
+    viewRepo: "https://github.com/amanduhhhh/Huffman-Compression",
   },
 ];
 
