@@ -25,6 +25,11 @@ import refyne01 from "../../assets/projects/refyne/01.webp";
 import refyne02 from "../../assets/projects/refyne/02.webp";
 import refyne03 from "../../assets/projects/refyne/03.webp";
 
+// to-bike-to detail media
+import toBikeTo01 from "../../assets/projects/to-bike-to/01.png";
+import toBikeTo02 from "../../assets/projects/to-bike-to/02.png";
+import toBikeTo03 from "../../assets/projects/to-bike-to/03.png";
+
 // sensa detail media
 import sensa01 from "../../assets/projects/sensa/01.webp";
 import sensa02 from "../../assets/projects/sensa/02.webp";
@@ -113,11 +118,11 @@ export const projects: Project[] = [
         type: "image",
         src: sensa01,
         alt: "Sensa",
-        caption: "accessibility research",
+        caption: "Accessibility research",
       },
-      { type: "image", src: sensa02, alt: "Sensa" },
-      { type: "image", src: sensa03, alt: "Sensa" },
-      { type: "image", src: sensa04, alt: "Sensa" },
+      { type: "image", src: sensa02, alt: "Sensa" , caption: "Mid-fi"},
+      { type: "image", src: sensa03, alt: "Sensa" , caption: "Final assets"},
+      { type: "image", src: sensa04, alt: "Sensa" , caption: "Hi-fi"},
     ],
     viewProject: "https://sensa-app.vercel.app",
     viewRepo: "https://github.com/amanduhhhh/sensa-deploy",
@@ -135,7 +140,51 @@ export const projects: Project[] = [
         bikes available, then export your route to Google Maps.
       </>
     ),
+    description: (
+      <>
+        To-bike-to uses Toronto Open Data to help people find nearby bike-share
+        stations with real-time bike availability. I cleaned and normalized the
+        station feed, mapped it onto an interactive Leaflet map, and used the
+        Google Maps API to calculate routes from a user's address to the best
+        available station.
+        <br />
+        <br />
+        The app also lets users export the chosen route directly to Google Maps,
+        so the planning flow can move from discovery to navigation without extra
+        copying or searching.
+        <br />
+        <br />
+        The hardest part was getting the API data into a reliable shape for
+        real-time use: cleaning inconsistent fields, matching availability to
+        station locations, and keeping the map useful even as the live feed
+        changed.
+      </>
+    ),
+    media: [
+      {
+        type: "image",
+        src: toBikeTo01,
+        alt: "To-bike-to station map",
+      },
+      {
+        type: "image",
+        src: toBikeTo02,
+        alt: "To-bike-to route details",
+      },
+      {
+        type: "image",
+        src: toBikeTo03,
+        alt: "Exported route to Google Maps",
+        caption: "Exported route to Google Maps!",
+      },
+    ],
+    specs: {
+      frameworks: ["Streamlit"],
+      languages: ["Python"],
+      tools: ["Pandas", "NumPy"],
+    },
     viewProject: "https://to-bike-to.streamlit.app",
+    viewRepo: "https://github.com/amanduhhhh/tobiketo",
   },
   {
     slug: "mosaic",
