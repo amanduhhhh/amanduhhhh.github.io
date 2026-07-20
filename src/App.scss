@@ -1,5 +1,8 @@
 @use "./variables" as *;
 @use "animate.css";
+
+// loaders.css colours the pacman loader with $primary-color 
+$primary-color: $highlight-2;
 @import "loaders.css/src/animations/pacman.scss";
 
 @font-face {
