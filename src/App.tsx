@@ -4,6 +4,7 @@ import Layout from "./components/Layout/Layout.tsx";
 import Home from "./components/Home/Home.tsx";
 import About from "./components/About/About.tsx";
 import Projects from "./components/Projects/Projects.tsx";
+import ProjectDetail from "./components/Projects/ProjectDetail/ProjectDetail.tsx";
 import Design from "./components/Design/Design.tsx";
 import Contact from "./components/Contact/Contact.tsx";
 
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/design" element={<Design />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
