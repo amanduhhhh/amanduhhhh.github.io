@@ -3,37 +3,9 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./Projects.scss";
-import ProjectCardInfo from "./ProjectCardInfo";
-import froggyJump from "../../assets/images/FroggyJump.png";
-import portfolio from "../../assets/images/logo.svg";
-import refyne from "../../assets/images/refyne.png";
-import huffman from "../../assets/images/Huffman.png";
-import dash from "../../assets/images/Dash.png";
-import physicsSim from "../../assets/images/Physics.png";
-import tihkoosue from "../../assets/images/Tihkoosue.png";
-import lecrochet from "../../assets/images/lecrochet.png";
-import bargainbites from "../../assets/images/bargainbites.png";
-import mosaic from "../../assets/images/mosaic.png";
-import oubliette from "../../assets/images/oubliette.png";
-import toBikeTo from "../../assets/images/tobiketo.png";
-import sensa from "../../assets/images/sensa.png";
+import { projects } from "./projectsData";
 
 const Projects = () => {
-  const imgs = [
-    sensa,
-    toBikeTo,
-    mosaic,
-    oubliette,
-    bargainbites,
-    lecrochet,
-    portfolio,
-    refyne,
-    huffman,
-    physicsSim,
-    tihkoosue,
-    froggyJump,
-    dash,
-  ];
   const [cardClass, setCardClass] = useState("card-animate");
   const [letterClass, setLetterClass] = useState("text-animate");
 
@@ -63,15 +35,18 @@ const Projects = () => {
             />
           </h1>
 
-          <p>demo videos available on github page!</p>
+          <p>now with actual description pages!!</p>
         </div>
         <div className="project-showcase">
-          {ProjectCardInfo.map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard
-              {...project}
-              imageLink={imgs[index]}
+              slug={project.slug}
+              title={project.title}
+              description={project.cardBlurb}
+              year={project.date}
+              imageLink={project.cardImage}
               className={cardClass}
-              key={index}
+              key={project.slug}
               id={`card_${index}`}
             />
           ))}
