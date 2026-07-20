@@ -1,6 +1,6 @@
 import Loader from "react-loaders";
 import { Link, useParams } from "react-router-dom";
-import { getProject, type ProjectMedia } from "../projectsData";
+import { getProject, projects, type ProjectMedia } from "../projectsData";
 import "./ProjectDetail.scss";
 
 function MediaItem({ media }: { media: ProjectMedia }) {
@@ -71,9 +71,14 @@ const ProjectDetail = () => {
     );
   }
 
+  const currentProjectIndex = projects.findIndex((p) => p.slug === project.slug);
+  const previousProject =
+    projects[(currentProjectIndex - 1 + projects.length) % projects.length];
+  const nextProject = projects[(currentProjectIndex + 1) % projects.length];
+
   return (
     <>
-      <div className="project-detail-page">
+      <div className="project-detail-page" key={project.slug}>
         <div className="detail-container">
           <div className="detail-body">
             <div className="detail-text">
@@ -156,6 +161,7 @@ const ProjectDetail = () => {
                   )}
                 </div>
               )}
+
             </div>
 
             {!!project.media?.length && (
@@ -166,6 +172,23 @@ const ProjectDetail = () => {
               </div>
             )}
           </div>
+
+          <nav className="project-nav" aria-label="Project navigation">
+            <Link
+              to={`/projects/${previousProject.slug}`}
+              className="project-nav-link"
+            >
+              <span>previous</span>
+              {previousProject.title}
+            </Link>
+            <Link
+              to={`/projects/${nextProject.slug}`}
+              className="project-nav-link project-nav-link-next"
+            >
+              <span>next</span>
+              {nextProject.title}
+            </Link>
+          </nav>
         </div>
       </div>
       <Loader type="pacman" active={true} />
