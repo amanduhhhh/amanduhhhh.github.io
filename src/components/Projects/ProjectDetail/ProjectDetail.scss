@@ -87,9 +87,6 @@
   .detail-text {
     .detail-tags p,
     .detail-specs p,
-    .detail-specs h2,
-    .related-projects p,
-    .related-projects h2,
     .flat-button {
       opacity: 1;
       animation: none;
@@ -127,11 +124,7 @@
   }
 
   .detail-specs {
-    margin-top: 2.8rem;
-    h2 {
-      font-size: 22px;
-      margin-bottom: 0.9rem;
-    }
+    margin-top: 1.6rem;
     p {
       margin: 0.3rem 0;
     }
@@ -146,33 +139,9 @@
     .flat-button {
       float: none; // override the global float
       margin-top: 1rem;
-      font-size: 14px;
-      letter-spacing: 3px;
-      padding: 7px 16px;
-    }
-  }
-
-  .related-projects {
-    margin-top: 3.5rem;
-    h2 {
-      font-size: 22px;
-      margin-bottom: 1rem;
-    }
-    .related-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-    .related-item {
-      width: fit-content;
-      font-family: sans-serif;
-      font-size: 14px;
-      color: $highlight-2;
-      text-decoration: none;
-      transition: color 0.2s;
-      &:hover {
-        color: $highlight-1;
-      }
+      font-size: clamp(12px, 1.2vw, 14px);
+      letter-spacing: clamp(1.5px, 0.3vw, 3px);
+      padding: clamp(6px, 0.8vw, 7px) clamp(10px, 1.5vw, 16px);
     }
   }
 
@@ -206,6 +175,13 @@
       flex: 1 1 100%;
       max-width: 100%;
       width: 100%;
+    }
+    .detail-text {
+      position: static;
+      top: auto;
+    }
+    .detail-media {
+      padding: 3.5rem 0 0;
     }
   }
 }

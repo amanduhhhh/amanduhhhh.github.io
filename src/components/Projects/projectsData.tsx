@@ -101,6 +101,7 @@ export const projects: Project[] = [
       </>
     ),
     role: ["Designer", "Developer"],
+    developedFor: "AI4Good Lab 2026",
     media: [
       {
         type: "video",

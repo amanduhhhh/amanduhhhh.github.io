@@ -1,10 +1,6 @@
 import Loader from "react-loaders";
 import { Link, useParams } from "react-router-dom";
-import {
-  getProject,
-  type Project,
-  type ProjectMedia,
-} from "../projectsData";
+import { getProject, type ProjectMedia } from "../projectsData";
 import "./ProjectDetail.scss";
 
 function MediaItem({ media }: { media: ProjectMedia }) {
@@ -75,10 +71,6 @@ const ProjectDetail = () => {
     );
   }
 
-  const related = (project.related ?? [])
-    .map(getProject)
-    .filter((p): p is Project => Boolean(p));
-
   return (
     <>
       <div className="project-detail-page">
@@ -117,7 +109,6 @@ const ProjectDetail = () => {
 
               {project.specs && (
                 <div className="detail-specs">
-                  <h2>technical specs</h2>
                   {!!project.specs.frameworks?.length && (
                     <p>
                       <span className="highlighted-2">Frameworks: </span>
@@ -163,23 +154,6 @@ const ProjectDetail = () => {
                       view repo
                     </a>
                   )}
-                </div>
-              )}
-
-              {related.length > 0 && (
-                <div className="related-projects">
-                  <h2>see more!</h2>
-                  <div className="related-list">
-                    {related.map((r) => (
-                      <Link
-                        key={r.slug}
-                        to={`/projects/${r.slug}`}
-                        className="related-item"
-                      >
-                        {r.title}
-                      </Link>
-                    ))}
-                  </div>
                 </div>
               )}
             </div>
