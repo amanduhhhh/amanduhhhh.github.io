@@ -30,6 +30,11 @@ import toBikeTo01 from "../../assets/projects/to-bike-to/01.png";
 import toBikeTo02 from "../../assets/projects/to-bike-to/02.png";
 import toBikeTo03 from "../../assets/projects/to-bike-to/03.png";
 
+// mosaic detail media
+import mosaic01 from "../../assets/projects/mosaic/01.png";
+import mosaic02 from "../../assets/projects/mosaic/02.png";
+import mosaic03 from "../../assets/projects/mosaic/03.png";
+
 // sensa detail media
 import sensa01 from "../../assets/projects/sensa/01.webp";
 import sensa02 from "../../assets/projects/sensa/02.webp";
@@ -201,6 +206,57 @@ export const projects: Project[] = [
         as layouts evolve.
       </>
     ),
+    developedFor: "Hack Western 12",
+    role: ["Developer", "Designer"],
+    description: (
+      <>
+        Mosaic is an AI data dashboard co-pilot built around the idea that data
+        interfaces should emerge from how people click, explore, and interact,
+        not from forcing them to write the perfect text prompt. It lets users
+        shape custom dashboards from live personal and public data sources, then
+        adapt the interface as their curiosity changes.
+        <br />
+        <br />
+        I developed the frontend/backend connection for streaming AI output with
+        server-sent events, and designed the four hot-swappable themes,
+        customization flow, and component blocks the AI uses to slot generated
+        content into real UI pieces. The structure kept generated dashboards
+        flexible for users while grounding the AI in reliable components and live
+        data.
+      </>
+    ),
+    specs: {
+      frameworks: ["Next.js", "React", "FastAPI", "Tailwind CSS"],
+      languages: ["TypeScript", "Python"],
+      tools: [
+        "LiteLLM",
+        "morphdom",
+        "Zustand",
+      ],
+    },
+    media: [
+      {
+        type: "youtube",
+        src: "vMlGH_3CMfQ",
+        alt: "Mosaic demo",
+      },
+      {
+        type: "image",
+        src: mosaic01,
+        alt: "Mosaic generated dashboard",
+      },
+      {
+        type: "image",
+        src: mosaic02,
+        alt: "Mosaic dashboard theme options",
+      },
+      {
+        type: "image",
+        src: mosaic03,
+        alt: "Mosaic generated component blocks",
+      },
+    ],
+    viewProject: "https://devpost.com/software/mosaic-yh1a3p?_gl=1*oq30gs*_gcl_au*MjExOTc4Mzg1OS4xNzc5MTM3OTky*_ga*MTQwOTAwMTIzOS4xNzcwNTg0MDkw*_ga_0YHJK3Y10M*czE3ODQ1NzEwNTMkbzI4JGcxJHQxNzg0NTcxMDYwJGo1MyRsMCRoMA..",
     viewRepo: "https://github.com/amanduhhhh/Mosaic",
   },
   {
