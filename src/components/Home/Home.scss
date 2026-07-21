@@ -1,3 +1,5 @@
+@use "../../variables" as *;
+
 .home-page {
   .text-area {
     position: absolute;
@@ -5,9 +7,41 @@
     top: 50%;
     width: 90%;
     max-width: 500px;
-    transform: translateY(-60%);
+    transform: translateY(-50%);
     max-height: 90%;
     z-index: 2;
+  }
+
+  .flat-button {
+    margin-top: 16px;
+  }
+
+  .webring {
+    clear: both;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 36px;
+    animation: bounceInUp 1.5s 2.2s backwards;
+
+    a {
+      color: $text;
+      text-decoration: none;
+      font-size: 16px;
+      opacity: 0.75;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 24px;
+      height: auto;
+      display: block;
+      opacity: 0.85;
+    }
   }
 
   // .alert {

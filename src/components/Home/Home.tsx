@@ -41,6 +41,24 @@ function Home() {
           <Link to="/about" className="flat-button">
             about me
           </Link>
+          <div className="webring">
+            <a href="https://cs.uwatering.com/#https://amandaxi.ca?nav=prev">
+              ←
+            </a>
+            <a
+              href="https://cs.uwatering.com/#https://amandaxi.ca"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="https://cs.uwatering.com/icon.white.svg"
+                alt="CS Webring"
+              />
+            </a>
+            <a href="https://cs.uwatering.com/#https://amandaxi.ca?nav=next">
+              →
+            </a>
+          </div>
         </div>
         <Logo />
         <div className="alert">
